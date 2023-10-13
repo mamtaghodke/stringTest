@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class  ShiftChar 
+{
+    public static void main(String[] args)
+    {
+       
+       Scanner sc = newScanner(system.in); 
+       System.out.print("Enter a string;");
+       string str = sc.nextLine();
+       StringBuilder result = new stringBulder();
+       
+       for (char character : str.tocharArray())
+       {
+           if (character.isUpperCase(character))
+           {
+                 result.append((char) (character -2));
+           }
+           
+           else if (character.isLowerCase (character))
+           {
+                 result.append((char) (character - 3));
+           }
+           
+           else 
+           {
+                 result.append(character);
+           }
+       }
+       
+       System.out.println("output        : " + result.tostring());
+       
+   }
+}
+	
